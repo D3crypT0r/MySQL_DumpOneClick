@@ -15,9 +15,9 @@ conn = pymysql.connect(
 )
 
 cursor = conn.cursor()
-
+ ## rename the column1 etc to your actual column names and #yourtablename to actual table name
 insert_query = """
-INSERT INTO "yourtablename" (column1, column2, column3, column4, column5) #rename the column1 etc to your actual column names and #yourtablename to actual table name
+INSERT INTO "yourtablename" (column1, column2, column3, column4, column5)
 VALUES (%s, %s, %s, %s, %s);
 """
 
@@ -32,7 +32,7 @@ for index, row in df.iterrows():
 
 conn.commit()
 
-print(f"Inserted {len(df)} records into 'yourtablename' table.") #rename the yourtablename to actual table name
+print(f"Inserted {len(df)} records into 'yourtablename' table.") ## rename the yourtablename to actual table name
 
 cursor.close()
 conn.close()
