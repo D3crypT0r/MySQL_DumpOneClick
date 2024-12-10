@@ -19,5 +19,6 @@ pandas and pymysql
 Load the CSV file into MySQL by configuring database connection details.
 
 #Installation:
-pip install pandas pymysql or pip3 install pandas pymysql
+
+'pip install pandas pymysql or pip3 install pandas pymysql'
 
